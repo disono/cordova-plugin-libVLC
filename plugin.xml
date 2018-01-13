@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-libVLC"
-        version="0.1.1">
+        version="0.1.2">
     <name>Cordova libVLC</name>
     <description>Cross-platform plugin for Cordova / PhoneGap to to easily stream play videos using libVLC. Available for Android ONLY for Now.</description>
     <license>Apache 2.0</license>
@@ -42,16 +42,16 @@
 		<resource-file src="src/android/res/drawable-hdpi/ic_pause_white_24dp.png" target="res/drawable-hdpi/ic_pause_white_24dp.png" />
 		<resource-file src="src/android/res/drawable-hdpi/ic_play_arrow_white_24dp.png" target="res/drawable-hdpi/ic_play_arrow_white_24dp.png" />
 		
-		<resource-file src="src/android/res/drawable-mdpi/ic_pause_white_24dp.png" target="res/drawable-hdpi/ic_pause_white_24dp.png" />
+		<resource-file src="src/android/res/drawable-mdpi/ic_pause_white_24dp.png" target="res/drawable-mdpi/ic_pause_white_24dp.png" />
 		<resource-file src="src/android/res/drawable-mdpi/ic_play_arrow_white_24dp.png" target="res/drawable-mdpi/ic_play_arrow_white_24dp.png" />
 		
-		<resource-file src="src/android/res/drawable-xhdpi/ic_pause_white_24dp.png" target="res/drawable-hdpi/ic_pause_white_24dp.png" />
+		<resource-file src="src/android/res/drawable-xhdpi/ic_pause_white_24dp.png" target="res/drawable-xhdpi/ic_pause_white_24dp.png" />
 		<resource-file src="src/android/res/drawable-xhdpi/ic_play_arrow_white_24dp.png" target="res/drawable-xhdpi/ic_play_arrow_white_24dp.png" />
 		
-		<resource-file src="src/android/res/drawable-xxhdpi/ic_pause_white_24dp.png" target="res/drawable-hdpi/ic_pause_white_24dp.png" />
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_pause_white_24dp.png" target="res/drawable-xxhdpi/ic_pause_white_24dp.png" />
 		<resource-file src="src/android/res/drawable-xxhdpi/ic_play_arrow_white_24dp.png" target="res/drawable-xxhdpi/ic_play_arrow_white_24dp.png" />
 		
-		<resource-file src="src/android/res/drawable-xxxhdpi/ic_pause_white_24dp.png" target="res/drawable-hdpi/ic_pause_white_24dp.png" />
+		<resource-file src="src/android/res/drawable-xxxhdpi/ic_pause_white_24dp.png" target="res/drawable-xxxhdpi/ic_pause_white_24dp.png" />
 		<resource-file src="src/android/res/drawable-xxxhdpi/ic_play_arrow_white_24dp.png" target="res/drawable-xxxhdpi/ic_play_arrow_white_24dp.png" />
     </platform>
 </plugin>
