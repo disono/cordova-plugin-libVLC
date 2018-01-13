@@ -7,11 +7,11 @@ Tutorial to compile from source:
 # Install
 Latest stable version from npm:
 ```sh
-$ cordova plugin add cordova-plugin-libVLC
+$ cordova plugin add cordova-plugin-libvlc
 ```
 Bleeding edge version from Github:
 ```sh
-$ cordova plugin add https://github.com/disono/libVLC-Player
+$ cordova plugin add https://github.com/disono/cordova-plugin-libVLC
 ```
 
 # Using the plugin
