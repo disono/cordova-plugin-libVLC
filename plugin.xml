@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-libVLC"
+        version="0.1.0">
+    <name>Cordova libVLC</name>
+    <description>Cross-platform plugin for Cordova / PhoneGap to to easily stream play videos using libVLC. Available for Android ONLY for Now.</description>
+    <license>Apache 2.0</license>
+    <keywords>libVLC, VLCLan, cordova, video, stream, libVLC cordova, cordova VLC, phonegap VLC</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <js-module src="www/libVLCPlayer.js" name="VideoPlayerVLC">
+        <clobbers target="window.libVLCPlayer"/>
+    </js-module>
+	
+    <!-- android -->
+    <platform name="android">	
+		<framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+	
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="VideoPlayerVLC">
+                <param name="android-package" value="com.webmons.disono.libVLC.VideoPlayerVLC"/>
+            </feature>
+        </config-file>
+		
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name="com.webmons.disono.libVLC.VLCActivity"/>
+        </config-file>
+		
+        <source-file src="src/android/com/webmons/disono/libVLC/VideoPlayerVLC.java" target-dir="src/com/webmons/disono/libVLC"/>
+        <source-file src="src/android/com/webmons/disono/libVLC/VLCActivity.java" target-dir="src/com/webmons/disono/libVLC"/>
+		
+		<resource-file src="src/android/res/layout/vlc_player.xml" target="res/layout/vlc_player.xml" />
+		
+		<resource-file src="src/android/res/drawable-hdpi/ic_pause_white_24dp.png" target="res/drawable-hdpi/ic_pause_white_24dp.png" />
+		<resource-file src="src/android/res/drawable-hdpi/ic_play_arrow_white_24dp.png" target="res/drawable-hdpi/ic_play_arrow_white_24dp.png" />
+		
+		<resource-file src="src/android/res/drawable-mdpi/ic_pause_white_24dp.png" target="res/drawable-hdpi/ic_pause_white_24dp.png" />
+		<resource-file src="src/android/res/drawable-mdpi/ic_play_arrow_white_24dp.png" target="res/drawable-mdpi/ic_play_arrow_white_24dp.png" />
+		
+		<resource-file src="src/android/res/drawable-xhdpi/ic_pause_white_24dp.png" target="res/drawable-hdpi/ic_pause_white_24dp.png" />
+		<resource-file src="src/android/res/drawable-xhdpi/ic_play_arrow_white_24dp.png" target="res/drawable-xhdpi/ic_play_arrow_white_24dp.png" />
+		
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_pause_white_24dp.png" target="res/drawable-hdpi/ic_pause_white_24dp.png" />
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_play_arrow_white_24dp.png" target="res/drawable-xxhdpi/ic_play_arrow_white_24dp.png" />
+		
+		<resource-file src="src/android/res/drawable-xxxhdpi/ic_pause_white_24dp.png" target="res/drawable-hdpi/ic_pause_white_24dp.png" />
+		<resource-file src="src/android/res/drawable-xxxhdpi/ic_play_arrow_white_24dp.png" target="res/drawable-xxxhdpi/ic_play_arrow_white_24dp.png" />
+    </platform>
+</plugin>

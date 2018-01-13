@@ -1,0 +1,36 @@
+{
+  "name": "cordova-plugin-libVLC",
+  "version": "0.1.0",
+  "description": "Cross-platform plugin for Cordova / PhoneGap to to easily stream play videos using libVLC. Available for Android ONLY for Now.",
+  "cordova": {
+    "id": "cordova-plugin-libVLC",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disono/libVLC-Player.git"
+  },
+  "keywords": [
+    "cordova",
+    "phonegap",
+    "libVLC",
+	"video",
+	"vlc",
+	"vlclan",
+    "vlc-player-cordova"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Archie Disono",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/disono/libVLC-Player"
+  },
+  "homepage": "https://github.com/disono/libVLC-Player/blob/master/README.md"
+}
