@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-libvlc",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Cross-platform plugin for Cordova / PhoneGap to to easily stream play videos using libVLC. Available for Android ONLY for Now.",
   "cordova": {
     "id": "cordova-plugin-libvlc",
